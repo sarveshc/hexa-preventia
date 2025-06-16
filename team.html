@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <style>
+    .company-img img {
+      height: 70vh;
+      width: 50vw;
+    }
+
+    @media (max-width: 750px) {
+      .company-img img {
+        width: 90vw;
+      }
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      list-style: none;
+      margin: 0;
+    }
+
+    .dropdown-menu li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .navbar-menu {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    .navbar-menu li {
+      padding: 10px 15px;
+      position: relative;
+    }
+
+    .sub-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      display: none;
+      padding: 10px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .has-sub:hover .sub-menu {
+      display: block;
+    }
+
+    .comming {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    .title {
+      font-size: 3rem;
+      color: #333;
+    }
+
+    .about-section {
+      padding-top: 40px !important;
+      padding-bottom: 40px !important;
+    }
+
+    .about-section h2 {
+      margin-bottom: 20px !important;
+    }
+
+    .about-section p {
+      margin-bottom: 10px !important;
+    }
+
+    .team-section {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .team-section h2 {
+      margin-bottom: 25px;
+    }
+
+    .card-img-top {
+      margin-top: 20px;
+    }
+
+    .team-section .card {
+      border: 2px solid #e0e0e0;
+      border-radius: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .team-section .card:hover {
+      transform: translateY(-8px) scale(1.03);
+      border-image: linear-gradient(45deg, #00bcd4, #2196f3) 1;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .team-section .card-img-top {
+      transition: transform 0.3s ease;
+    }
+
+    .team-section .card:hover .card-img-top {
+      transform: rotate(-5deg) scale(1.1);
+    }
+
+    .team-section h5.card-title {
+      margin-top: 10px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .team-section .card-body a {
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    .team-section .card-body a:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <section class="page-title-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="breadcrumb-area">
+            <h2 class="page-title">About Us</h2>
+            <ul class="breadcrumbs-link">
+              <li><a href="index.html">Home</a></li>
+              <li class="active">About Us</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about-section anim-object pdt-110 pdb-115 pdb-lg-110" data-background="images/bg/abs-bg3.png">
+    <div class="container">
+      <div class="row ">
+        <!-- Text Column -->
+        <div class="col-md-12 col-lg-6">
+          <h2 class="mb-4">CEO Of Hexa Preventia</h2>
+          <p style="font-size: 1.3rem;">
+            CEO, Dr. Kulwant Raj Sharma, MBBS (AFMC), MD, PGP (Cardiology - Johns Hopkins USA), is an Interventional
+            Cardiologist.
+            He served in the Indian Army (AMC) from 1981 to 1997 (Retired Lt Col).
+          </p>
+          <p style="font-size: 1.3rem;">
+            After gaining vast experience in healthcare, he has now repositioned himself as a wellness & anti-aging
+            expert and coach.
+          </p>
+        </div>
+
+        <!-- Image Column -->
+        <div class="col-md-12 col-lg-6">
+          <div class="about-image-box-style2 dot-circle " style=" height: 50vh;">
+            <img src="images/about/ceo.png" alt="CEO" style="height: 100%; width: 100%;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="pdt-110 pdb-170 bg-no-repeat bg-cover bg-pos-ct anim-object" data-background="images/bg/abs-bg7.png">
+		<div class="section-title text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+			<div class="container">
+				<div class="row">
+					<div class="col"></div>
+					<div class="col-lg-8 col-xl-6">
+						<div class="title-box-center">
+							<h6 class="sub-title line-top-center mrb-10">Our Team</h6>
+							<h2 class="title">Meet Our Expert Team Members</h2>
+						</div>
+					</div>
+					<div class="col"></div>
+				</div>
+			</div>
+		</div>
+		<div class="section-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div class="team-block mrb-30">
+							<div class="team-upper-part">
+								<img class="img-full" src="images/team/team01.jpg" alt="">
+							</div>
+							<div class="team-bottom-part">
+								<h4 class="team-title"><a href="#">Alica Bendor</a></h4>
+								<h6 class="designation">Doctor</h6>
+							</div>
+							<div class="team-bottom-part-hover">
+								<h4 class="team-title"><a href="#">Alica Bendor</a></h4>
+								<h6 class="designation">Doctor</h6>
+								<ul class="social-list list-sm">
+									<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div class="team-block mrb-30">
+							<div class="team-upper-part">
+								<img class="img-full" src="images/team/team02.jpg" alt="">
+							</div>
+							<div class="team-bottom-part">
+								<h4 class="team-title"><a href="#">Robert Brown</a></h4>
+								<h6 class="designation">Doctor</h6>
+							</div>
+							<div class="team-bottom-part-hover">
+								<h4 class="team-title"><a href="#">Robert Brown</a></h4>
+								<h6 class="designation">Doctor</h6>
+								<ul class="social-list list-sm">
+									<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fa fa-youtube" ></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div class="team-block mrb-30">
+							<div class="team-upper-part">
+								<img class="img-full" src="images/team/team03.jpg" alt="">
+							</div>
+							<div class="team-bottom-part">
+								<h4 class="team-title"><a href="#">Monika Tylor</a></h4>
+								<h6 class="designation">Doctor</h6>
+							</div>
+							<div class="team-bottom-part-hover">
+								<h4 class="team-title"><a href="#">Monika Tylor</a></h4>
+								<h6 class="designation">Doctor</h6>
+								<ul class="social-list list-sm">
+									<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fa fa-youtube" ></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div class="team-block mrb-30">
+							<div class="team-upper-part">
+								<img class="img-full" src="images/team/team04.jpg" alt="">
+							</div>
+							<div class="team-bottom-part">
+								<h4 class="team-title"><a href="#">Thomas Mark</a></h4>
+								<h6 class="designation">Doctor</h6>
+							</div>
+							<div class="team-bottom-part-hover">
+								<h4 class="team-title"><a href="#">Thomas Mark</a></h4>
+								<h6 class="designation">Doctor</h6>
+								<ul class="social-list list-sm">
+									<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fa fa-youtube" ></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+
+</html>
